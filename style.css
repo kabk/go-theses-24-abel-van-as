@@ -1,0 +1,312 @@
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  }
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
+
+
+*{
+    /* font-size:max(24px, 3vw); */
+    /* color: rgba(0,0,0,0.9); */
+  }
+  main{
+    width:50%;
+    margin-left:25%;
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
+  sup :target, footer :target {
+    border-radius:100%;
+    background-color: rgba(255, 200, 0, 0.75);
+    box-shadow: 0 0 0.5rem 0.5rem rgba(255, 200, 0, 0.75);
+    color:#F00;
+  }
+  .margin-note{
+    font-size: 0.8rem;
+    position:absolute;
+    display:inline;
+    width:25%;
+    right:0;
+    padding:1rem;
+    margin-top:-0.625rem;
+    box-sizing: border-box;
+    height: 0;
+  }
+
+@media screen and (max-width: 1920px) { /* Voer de volgende regels alleen uit op schermen kleiner dan 1024px breed (laptop schermen) */
+    
+    .container {
+        display: flex flex;
+        flex-direction: row; /* Standaard flexrichting: rij */
+    }
+        
+    .text-container {
+        width: 50%; /* Beide containers nemen de helft van de breedte in */
+        box-sizing: border-box;
+        padding: 0 10px;
+        /* border: 1px solid black; */
+    }
+
+    .photo-container {
+        position: relative;
+        left: 50%;
+        width: 50%; /* Beide containers nemen de helft van de breedte in */
+        box-sizing: border-box;
+        padding: 0 10px;
+        /* border: 1px solid black; */
+    }
+}
+
+
+@media screen and (max-width: 900px) { /* Voer de volgende regels alleen uit op schermen kleiner dan 780px breed (telefoon schermen) */
+    .container {
+        flex-direction: column; /* Zet de flexrichting in een kolom */
+    }
+
+    .text-container {
+        width: 100%; /* Beide containers nemen de helft van de breedte in */
+        box-sizing: border-box;
+        padding: 0 10px;
+        /* border: 1px solid black; */
+    }
+
+    .photo-container {
+        /* position: relative; */
+        left: 0%;
+        width: 100%; /* Beide containers nemen de helft van de breedte in */
+        box-sizing: border-box;
+        padding: 0 10px;
+        /* border: 1px solid black; */
+    }
+}
+
+/* .text-container {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: 1px solid black;
+}
+
+.photo-container {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: 1px solid black;
+} */
+
+ 
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width:100%;
+    background-color: rgb(245,245,245);
+    /* background-color: rgb(0, 255, 0); */
+}
+
+h1 {
+    /* font-kerning: none; */
+    /* position:absolute; */
+    /* left: 50vW; */
+    margin-top: 0%;
+    margin-left: 0.5vw;
+    /* position:static; */
+    font-size: 12vw;
+    line-height: 0.85em;
+    letter-spacing: -0.04em;
+    /* left: 70%; */
+    /* transform: translateX(-50%); */
+    /* width: 50vW; */
+    /* top: 50%; */
+    /* border: 1px solid black; */
+    /* font-family: "neue-haas-grotesk-display", sans-serif; */
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 4vW; */
+    /* text-align: center; */
+}
+
+h2 {
+    position: relative;
+    /* margin: 0; */
+    padding: 0;
+    margin-top: -5vw;
+    /* margin-left: 12.5vW; */
+    text-align: center;
+    /* max-width: 50vW; */
+    font-size: x-large;
+    /* border: 1px solid black; */
+    /* font-family: "neue-haas-grotesk-display", sans-serif; */
+    font-weight: 400;
+    font-style: normal;
+    background-color: red;
+    color: white;
+    padding: 1vw;
+    margin-bottom: 5vw;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    /* margin-top: 2.5%; */
+    /* margin-left: 12.5vW; */
+    text-align: center;
+    /* max-width: 50vW; */
+    font-size: 3vw;
+    /* border: 1px solid black; */
+    /* font-family: "neue-haas-grotesk-display", sans-serif; */
+    font-weight: 400;
+    font-style: normal;
+    background-color: blue;
+    color: white;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    margin-top: 2.5%;
+    /* margin-left: 12.5vW; */
+    text-align: center;
+    /* max-width: 50vW; */
+    font-size: large;
+    /* border: 1px solid black; */
+    /* font-family: "neue-haas-grotesk-display", sans-serif; */
+    font-weight: 600;
+    font-style: normal;
+}
+
+.plus {
+    /* margin-left: 0.5vw; */
+    font-size: 12vw;
+    line-height: 0.85em;
+    letter-spacing: -0.04em;
+    font-weight: 400;
+    /* border: 1px solid black; */
+    background-color: rgb(0, 255, 0);
+    color: white;
+    /* padding-bottom: 22px; */
+    margin-top: -10vh;
+    padding-top: 0px;
+    text-align: center;
+}
+
+/* .container {
+    display: flex;
+  } */
+  
+
+
+.photo-container img {
+    position:relative;
+    width:100%;
+    height:auto;
+    margin:0;
+    padding:0;
+    display: block;
+    align-items: center;
+}
+
+.body-text {
+    width: 75%;
+    text-align: left;
+    /* font-family: Inter, sans-serif; */
+    /* font-family: "neue-haas-grotesk-text", sans-serif; */
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+}
+
+.photo-text {
+    width: 75%;
+    /* height: 100px; */
+    text-align: left;
+    /* font-family: Inter, sans-serif; */
+    /* font-family: "neue-haas-grotesk-text", sans-serif; */
+    font-weight: 400;
+    font-style:;
+    font-size: medium;
+    /* background-color: red; */
+    z-index: 999;
+    margin-top: 0rem;
+    /* padding-bottom:1rem; */
+    padding-left:1rem;
+}
+
+.footnote {
+    display: block;
+    /* width: 75%;
+    text-align: left;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger; */
+}
+
+#cite {
+    font-family: Arial, sans-serif; /* Voorbeeld: wijzig het lettertype */
+    color: blue; /* Voorbeeld: wijzig de tekstkleur */
+    font-size: 24px; /* Voorbeeld: wijzig de lettergrootte */
+    font-weight: bold; /* Voorbeeld: wijzig de letterdikte */
+    /* Voeg andere CSS-eigenschappen toe zoals nodig */
+  }
+  
+
+.demo {
+    width: 75%;
+    text-align: left;
+    font-family: "Roboto";
+    /* font-family: "neue-haas-grotesk-text", sans-serif; */
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+}
+
+
+/* .reference-container {
+    position: fixed;
+    left: 50px;
+    top: 50%;
+    width: 20vW;
+    border: 1px solid black;
+} */
+
+.book-reference {
+    font-size: 12px;
+    position:relative;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.reference-marker {
+    vertical-align: super;
+    font-size: 70%;
+    color: red;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.full-reference {
+    /* position: fixed; */
+    /* right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none; 
+    max-width: 20vW; /
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Zorg dat de volledige referentie meescrolt */
+body.scrolling .full-reference {
+    position: fixed;
+}
