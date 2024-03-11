@@ -126,7 +126,7 @@
     }
 
     .ending-block {
-        height: 15vh;
+        height: 30vh;
         width: 100vw;
     }
 
@@ -389,7 +389,8 @@ ol.list a {
     .text-container .list a[href="#privatemuseums"],
     .text-container .list a[href="#conclusion"],
     .text-container .list a[href="#bibliography"],
-    .text-container .list a[href="#appendix"] {
+    .text-container .list a[href="#appendix"],
+    .text-container .list a[href="#disclaimer"] {
         border-top: 0.2rem solid RGB(25, 25, 25);
         padding-top: 0rem;
         width: 100vw;
