@@ -45,20 +45,23 @@
     }
 
     h1 {
-        font-size: 12vw;
+        font-size: 8vw;
         letter-spacing: -0.5rem;
         word-spacing: 2rem;
         margin-top: 0rem;        
         padding-top: 1rem;
         padding-left: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: 7rem;
+        max-width: 1000px;        
+        max-width: 1700px;
     }
 
     h2 {
         font-size: 2.4rem;
-        padding: 10px 20px;
+        padding-bottom: 3rem;
         margin-top: -7.5vw;
-        padding-left: 2rem;
+        padding-left: 4rem;
+        max-width: 1000px;
     }
 
     h3 {
@@ -70,7 +73,7 @@
     .intro {
         font-size: 1.2rem;
         font-weight: 600;
-        padding-left: 2rem;
+        padding-left: 4rem;
         padding-top: 1rem;
     }
 
@@ -88,7 +91,7 @@
 
     .photo-container {
         position: relative;
-        left: 1000px;
+        left: 800px;
         width: 50%;
         max-width: 1000px;
         box-sizing: border-box;
