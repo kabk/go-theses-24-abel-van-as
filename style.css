@@ -145,6 +145,8 @@
         font-size: 1.8rem;
         line-height: 1.8rem;
         padding-top: 4rem;
+        background-color: rgb(245,245,245);
+        padding-bottom: 0.2rem;
     }
 
     .intro {
