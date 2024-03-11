@@ -60,8 +60,8 @@
         font-size: 2.4rem;
         padding-bottom: 3rem;
         margin-top: -7.5vw;
-        padding-left: 4rem;
-        max-width: 1000px;
+        padding-left: 2rem;
+        max-width: 800px;
     }
 
     h3 {
@@ -73,7 +73,7 @@
     .intro {
         font-size: 1.2rem;
         font-weight: 600;
-        padding-left: 4rem;
+        padding-left: 2rem;
         padding-top: 1rem;
     }
 
@@ -85,7 +85,7 @@
     .text-container {
         width: 50%;
         box-sizing: border-box;
-        padding-left: 4rem;
+        padding-left: 2rem;
         max-width: 1000px;
     }
 
