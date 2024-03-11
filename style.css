@@ -27,7 +27,8 @@
     height: 0;
   }
 
-@media screen and (min-width:780px) and (max-width: 1920px) {
+/* @media screen and (min-width:780px) and (max-width: 1920px) { */
+@media screen and (min-width:780px) {
     
     .landing-block {
         height: auto;
