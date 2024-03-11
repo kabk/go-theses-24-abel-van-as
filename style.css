@@ -1,6 +1,6 @@
 :root {
     font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    font-feature-settings: 'liga' 1, 'calt' 1;
   }
   @supports (font-variation-settings: normal) {
     :root { font-family: InterVariable, sans-serif; }
@@ -8,8 +8,7 @@
 
 
 *{
-    /* font-size:max(24px, 3vw); */
-    /* color: rgba(0,0,0,0.9); */
+    
   }
   main{
     width:50%;
@@ -17,13 +16,8 @@
     margin-top:1rem;
     margin-bottom:1rem;
   }
-  sup :target, footer :target {
-    border-radius:100%;
-    background-color: rgba(255, 200, 0, 0.75);
-    box-shadow: 0 0 0.5rem 0.5rem rgba(255, 200, 0, 0.75);
-    color:#F00;
-  }
-  .margin-note{
+
+.margin-note{
     font-size: 0.8rem;
     position:absolute;
     display:inline;
@@ -35,68 +29,160 @@
     height: 0;
   }
 
-@media screen and (max-width: 1920px) { /* Voer de volgende regels alleen uit op schermen kleiner dan 1024px breed (laptop schermen) */
+@media screen and (min-width:780px) and (max-width: 1920px) {
     
+    .landing-block {
+        height: auto;
+        width: auto;
+    }
+
+    .ending-block {
+        height: 15vh;
+        width: 100vw;
+    }
+
+    #intro {
+        font-size: 1vw;
+        font-weight: 600;
+    }
+
+    h1 {
+        font-size: 12vw;
+        letter-spacing: -0.5rem;
+        word-spacing: 2rem;
+        margin-top: 0rem;        
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        padding: 10px 20px;
+        margin-top: -7.5vw;
+        padding-left: 2rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding-left: 2rem;
+        padding-top: 1rem;
+    }
+
     .container {
         display: flex flex;
-        flex-direction: row; /* Standaard flexrichting: rij */
+        flex-direction: row;
     }
         
     .text-container {
-        width: 50%; /* Beide containers nemen de helft van de breedte in */
+        width: 50%;
         box-sizing: border-box;
-        padding: 0 10px;
-        /* border: 1px solid black; */
+        padding-left: 2rem;
     }
 
     .photo-container {
         position: relative;
         left: 50%;
-        width: 50%; /* Beide containers nemen de helft van de breedte in */
+        width: 50%;
         box-sizing: border-box;
         padding: 0 10px;
-        /* border: 1px solid black; */
+    }
+
+    .photo-text {
+        padding-left:1rem;
+    }
+
+    .body-text{
+        width: 75%;
+    }
+
+    ol.list {
+        font-size: 1.2rem;
+        line-height: 0.8rem;
+    }
+
+    ol.list a {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
     }
 }
 
 
-@media screen and (max-width: 900px) { /* Voer de volgende regels alleen uit op schermen kleiner dan 780px breed (telefoon schermen) */
+@media screen and (max-width: 779px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    .landing-block {
+        height: auto;
+        width: auto;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: -0.1rem;
+        word-spacing: 0rem;
+        margin-bottom: 3rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-right: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-top: -6vw;
+        padding-left: 3rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+        font-weight: 400;
+        padding-left: 3rem;
+        padding-top: 1rem;
+    }
+    
     .container {
-        flex-direction: column; /* Zet de flexrichting in een kolom */
+        flex-direction: column;
     }
 
     .text-container {
-        width: 100%; /* Beide containers nemen de helft van de breedte in */
+        width: 100%;
         box-sizing: border-box;
-        padding: 0 10px;
-        /* border: 1px solid black; */
+        padding-left: 3rem;
+        padding-right: 2rem;
     }
 
     .photo-container {
-        /* position: relative; */
         left: 0%;
-        width: 100%; /* Beide containers nemen de helft van de breedte in */
+        width: 100%;
         box-sizing: border-box;
-        padding: 0 10px;
-        /* border: 1px solid black; */
     }
+
+    .photo-text {
+        padding-left: 3rem;
+    }
+
+    .body-text{
+        width: 90%;
+    }
+
+    ol.list {
+        font-size: 0.9rem;
+    }
+    
 }
-
-/* .text-container {
-    width: 50%;
-    box-sizing: border-box;
-    padding: 0 10px;
-    border: 1px solid black;
-}
-
-.photo-container {
-    width: 50%;
-    box-sizing: border-box;
-    padding: 0 10px;
-    border: 1px solid black;
-} */
-
- 
 
 
 body {
@@ -104,102 +190,111 @@ body {
     padding: 0;
     width:100%;
     background-color: rgb(245,245,245);
-    /* background-color: rgb(0, 255, 0); */
+    overflow-x: hidden;
+    color: RGB(25, 25, 25);
+}
+
+.text-container {
+    margin-top: 50px;
 }
 
 h1 {
-    /* font-kerning: none; */
-    /* position:absolute; */
-    /* left: 50vW; */
+    position: relative;
     margin-top: 0%;
-    margin-left: 0.5vw;
-    /* position:static; */
-    font-size: 12vw;
     line-height: 0.85em;
-    letter-spacing: -0.04em;
-    /* left: 70%; */
-    /* transform: translateX(-50%); */
-    /* width: 50vW; */
-    /* top: 50%; */
-    /* border: 1px solid black; */
-    /* font-family: "neue-haas-grotesk-display", sans-serif; */
     font-weight: 400;
     font-style: normal;
-    /* font-size: 4vW; */
-    /* text-align: center; */
 }
 
 h2 {
     position: relative;
-    /* margin: 0; */
-    padding: 0;
-    margin-top: -5vw;
-    /* margin-left: 12.5vW; */
-    text-align: center;
-    /* max-width: 50vW; */
-    font-size: x-large;
-    /* border: 1px solid black; */
-    /* font-family: "neue-haas-grotesk-display", sans-serif; */
+    text-align: left;
     font-weight: 400;
     font-style: normal;
-    background-color: red;
-    color: white;
-    padding: 1vw;
-    margin-bottom: 5vw;
+    width: 75%;
 }
 
 h3 {
-    margin: 0;
-    padding: 0;
     letter-spacing: -0.04em;
     text-transform: uppercase;
-    /* margin-top: 2.5%; */
-    /* margin-left: 12.5vW; */
-    text-align: center;
-    /* max-width: 50vW; */
-    font-size: 3vw;
-    /* border: 1px solid black; */
-    /* font-family: "neue-haas-grotesk-display", sans-serif; */
+    text-align: left;
     font-weight: 400;
     font-style: normal;
-    background-color: blue;
-    color: white;
+    border-top: 0.25rem solid RGB(25, 25, 25);
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+h3[id] {
+    scroll-margin-top: -0.1rem;
 }
 
 h4 {
-    margin: 0;
-    padding: 0;
-    margin-top: 2.5%;
-    /* margin-left: 12.5vW; */
-    text-align: center;
-    /* max-width: 50vW; */
-    font-size: large;
-    /* border: 1px solid black; */
-    /* font-family: "neue-haas-grotesk-display", sans-serif; */
-    font-weight: 600;
+    text-align: left;
+    font-weight: 800;
     font-style: normal;
+    font-size: larger;
 }
 
-.plus {
-    /* margin-left: 0.5vw; */
-    font-size: 12vw;
-    line-height: 0.85em;
-    letter-spacing: -0.04em;
-    font-weight: 400;
-    /* border: 1px solid black; */
-    background-color: rgb(0, 255, 0);
-    color: white;
-    /* padding-bottom: 22px; */
-    margin-top: -10vh;
-    padding-top: 0px;
-    text-align: center;
+.intro {
+    position: relative;
+    margin-top: -2vw;
+    text-align: left;
+    font-style: normal;
+    width: 75%;
+    word-spacing: -0.15rem;
 }
 
-/* .container {
-    display: flex;
-  } */
-  
+ol.list {
+    list-style-type: upper-roman;
+    text-align: left;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 0rem;
+    align-items: baseline;
+}
 
+ol.list a {
+    margin-left: 0rem;
+    text-decoration: none;
+}
+
+ol.list li p.list a {
+    color: RGB(25, 25, 25);
+    text-decoration: none;
+}
+
+ol.list li {
+    list-style: none;
+    margin-left: 0rem;
+    align-items: baseline; 
+    line-height: 1.4rem;
+}
+
+ol.list ol {
+    list-style-type: decimal;
+    margin-left: 3em; 
+}
+
+ol.list a {
+    border-top: none;
+}
+
+    .text-container .list a[href="#acknowledgements"],
+    .text-container .list a[href="#abstract"],
+    .text-container .list a[href="#table"],
+    .text-container .list a[href="#introd"],
+    .text-container .list a[href="#anthro"],
+    .text-container .list a[href="#government"],
+    .text-container .list a[href="#privatemuseums"],
+    .text-container .list a[href="#conclusion"],
+    .text-container .list a[href="#bibliography"],
+    .text-container .list a[href="#appendix"] {
+        border-top: 0.2rem solid RGB(25, 25, 25);
+        padding-top: 0rem;
+        width: 100vw;
+    }
 
 .photo-container img {
     position:relative;
@@ -212,101 +307,54 @@ h4 {
 }
 
 .body-text {
+    text-align: left;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.bibliography-text {
     width: 75%;
     text-align: left;
-    /* font-family: Inter, sans-serif; */
-    /* font-family: "neue-haas-grotesk-text", sans-serif; */
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    font-size: larger;
+    font-size: smaller;
 }
 
 .photo-text {
     width: 75%;
-    /* height: 100px; */
     text-align: left;
-    /* font-family: Inter, sans-serif; */
-    /* font-family: "neue-haas-grotesk-text", sans-serif; */
-    font-weight: 400;
+    font-weight: 600;
     font-style:;
     font-size: medium;
-    /* background-color: red; */
     z-index: 999;
     margin-top: 0rem;
-    /* padding-bottom:1rem; */
-    padding-left:1rem;
 }
 
 .footnote {
     display: block;
-    /* width: 75%;
-    text-align: left;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-style: normal;
-    font-size: larger; */
 }
 
-#cite {
-    font-family: Arial, sans-serif; /* Voorbeeld: wijzig het lettertype */
-    color: blue; /* Voorbeeld: wijzig de tekstkleur */
-    font-size: 24px; /* Voorbeeld: wijzig de lettergrootte */
-    font-weight: bold; /* Voorbeeld: wijzig de letterdikte */
-    /* Voeg andere CSS-eigenschappen toe zoals nodig */
-  }
-  
+.button1 {
+    border-style: none;
+    font-size: large;
+    font-weight: 600;
+    color: RGB(25, 25, 25);
+    padding-left: 0rem;
+    padding-right: 0rem;
+    text-align: left;
+    cursor: pointer;
+    border-bottom: 0.1rem solid RGB(25, 25, 25);
+    padding-bottom: 0px;
+    background-color: rgb(245,245,245);
+}
 
 .demo {
-    width: 75%;
-    text-align: left;
-    font-family: "Roboto";
-    /* font-family: "neue-haas-grotesk-text", sans-serif; */
-    font-weight: 400;
-    font-style: normal;
-    font-size: larger;
-}
-
-
-/* .reference-container {
-    position: fixed;
-    left: 50px;
-    top: 50%;
-    width: 20vW;
-    border: 1px solid black;
-} */
-
-.book-reference {
-    font-size: 12px;
-    position:relative;
-    font-family: "neue-haas-grotesk-text", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.reference-marker {
-    vertical-align: super;
-    font-size: 70%;
-    color: red;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.full-reference {
-    /* position: fixed; */
-    /* right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: none; 
-    max-width: 20vW; /
-    padding: 10px;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-}
-
-/* Zorg dat de volledige referentie meescrolt */
-body.scrolling .full-reference {
-    position: fixed;
+    height: auto;
+    width: auto;
+    border-style: none;
+    font-weight: 300;
+    font-size: smaller;
+    color: RGB(25, 25, 25);
+    font-size: large;
 }
