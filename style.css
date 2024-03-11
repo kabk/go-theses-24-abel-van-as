@@ -27,8 +27,95 @@
     height: 0;
   }
 
-/* @media screen and (min-width:780px) and (max-width: 1920px) { */
-@media screen and (min-width:780px) {
+  @media screen and (min-width:1921px) {
+    
+    .landing-block {
+        height: auto;
+        width: auto;
+    }
+
+    .ending-block {
+        height: 15vh;
+        width: 100vw;
+    }
+
+    #intro {
+        font-size: 1vw;
+        font-weight: 600;
+    }
+
+    h1 {
+        font-size: 12vw;
+        letter-spacing: -0.5rem;
+        word-spacing: 2rem;
+        margin-top: 0rem;        
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        padding: 10px 20px;
+        margin-top: -7.5vw;
+        padding-left: 2rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+        line-height: 3rem;
+        padding-top: 0.5rem;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding-left: 2rem;
+        padding-top: 1rem;
+    }
+
+    .container {
+        display: flex flex;
+        flex-direction: row;
+    }
+        
+    .text-container {
+        width: 50%;
+        box-sizing: border-box;
+        padding-left: 4rem;
+        max-width: 1000px;
+    }
+
+    .photo-container {
+        position: relative;
+        left: 1000px;
+        width: 50%;
+        max-width: 1000px;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+
+    .photo-text {
+        padding-left:1rem;
+    }
+
+    .body-text{
+        width: 75%;
+    }
+
+    ol.list {
+        font-size: 1.2rem;
+        line-height: 0.8rem;
+    }
+
+    ol.list a {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+}
+
+
+@media screen and (min-width:780px) and (max-width: 1920px) {
     
     .landing-block {
         height: auto;
