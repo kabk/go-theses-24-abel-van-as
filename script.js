@@ -30,3 +30,30 @@ window.addEventListener('scroll', function() {
   });
 });
 
+window.addEventListener('scroll', function() {
+  const headings = document.querySelectorAll('h3[id]');
+
+  headings.forEach((currentHeading, index) => {
+    const nextHeading = headings[index + 1];
+    
+    if (nextHeading || index === headings.length - 1) { // Controleer of het de laatste <h3> is
+      const currentRect = currentHeading.getBoundingClientRect();
+      const nextRect = nextHeading ? nextHeading.getBoundingClientRect() : null;
+
+      if (nextRect && nextRect.top <= 0) {
+        currentHeading.style.position = 'static';
+      } else {
+        currentHeading.style.position = 'sticky';
+        currentHeading.style.top = 0;
+      }
+    }
+  });
+});
+
+
+
+window.addEventListener('wheel', function(e) {
+  if (e.deltaX !== 0) {
+      e.preventDefault();
+  }
+});

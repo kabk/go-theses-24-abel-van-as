@@ -116,7 +116,8 @@
 @media screen and (max-width: 779px) {
     
     body {
-        overflow-x: hidden;
+        overflow-x: fixed;
+        width: 100vw;
     }
 
     .landing-block {
@@ -196,6 +197,7 @@ body {
     width:100%;
     background-color: rgb(245,245,245);
     overflow-x: hidden;
+    overflow-y: auto;
     color: RGB(25, 25, 25);
 }
 
