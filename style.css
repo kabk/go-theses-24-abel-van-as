@@ -64,6 +64,7 @@
     h3 {
         font-size: 3rem;
         line-height: 3rem;
+        padding-top: 0.5rem;
     }
 
     .intro {
@@ -142,6 +143,7 @@
     h3 {
         font-size: 1.8rem;
         line-height: 1.8rem;
+        padding-top: 2rem;
     }
 
     .intro {
@@ -224,7 +226,6 @@ h3 {
     font-weight: 400;
     font-style: normal;
     border-top: 0.25rem solid RGB(25, 25, 25);
-    padding-top: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
