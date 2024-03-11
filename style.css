@@ -7,9 +7,7 @@
   }
 
 
-*{
-    
-  }
+
   main{
     width:50%;
     margin-left:25%;
@@ -181,6 +179,11 @@
     ol.list {
         font-size: 0.9rem;
     }
+
+    .ending-block {
+        height: 15vh;
+        width: 100vw;
+    }
     
 }
 
@@ -325,7 +328,6 @@ ol.list a {
     width: 75%;
     text-align: left;
     font-weight: 600;
-    font-style:;
     font-size: medium;
     z-index: 999;
     margin-top: 0rem;
