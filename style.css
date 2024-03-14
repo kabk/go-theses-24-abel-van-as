@@ -412,6 +412,10 @@ ol.list a {
     font-size: 1.2rem;
 }
 
+.body-text a{
+    color: RGB(25, 25, 25);
+}
+
 .bibliography-text {
     width: 75%;
     text-align: left;
