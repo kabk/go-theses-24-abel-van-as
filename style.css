@@ -388,7 +388,8 @@ ol.list a {
     .text-container .list a[href="#conclusion"],
     .text-container .list a[href="#bibliography"],
     .text-container .list a[href="#appendix"],
-    .text-container .list a[href="#disclaimer"] {
+    .text-container .list a[href="#disclaimer"],
+    .text-container .list a[href="#type"] {
         border-top: 0.2rem solid RGB(25, 25, 25);
         padding-top: 0rem;
         width: 100vw;
