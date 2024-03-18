@@ -327,6 +327,11 @@ h3[id] {
     scroll-margin-top: -0.1rem;
 }
 
+h3 a {
+    text-decoration: none;
+    color: RGB(25, 25, 25);
+}
+
 h4 {
     text-align: left;
     font-weight: 800;
